@@ -19,8 +19,26 @@
                     <img id="conicaltreeleaves-normal" src="assets\Stylized_Leaves_002_normal.jpg">
                     <img id="treetrunk-base" src="assets\Bark_06_basecolor.jpg">
                     <img id="treetrunk-ambient-occlusion" src="assets\Bark_06_ambientOcclusion.jpg">
-                    <img id="treetrunk-normal" src="assets\Bark_06_normal.jpg">
+                    <img id="treetrunk-normal" src="assets\Bark_06_normal.jpg"> 
+                    <img id="sky" src="assets\Sky.jpg">
+                    <a-asset-item
+                    id="chair"
+                    src="assets\Chair.glb">
+                </a-asset-item>
+                <a-asset-item
+                id="lamp"
+                src="assets\Lamp.glb">
+            </a-asset-item>
+            
                 </a-assets>
+                <a-entity
+                gltf-model="#Chair"
+                position="-1.0 0 -10"
+                rotation="0 45 0"
+                scale="0.1 0.1 0.1">
+            </a-entity
+            >
+
                  <a-plane
                   material= "src: #grass-base;
                    repeat: 500 500;
@@ -35,7 +53,7 @@
                      >
                     </a-plane>
                      <a-sky 
-                     color="lightskyblue" >
+                     src="#sky" >
                      </a-sky>
                      <a-mixin
                      id="wallcolor"
@@ -102,8 +120,6 @@ width="12"
 depth="12"
 height="0.25">
 </a-box>
-<a-mixin
-id="treetrunk"
 <a-mixin
 id="treetrunk"
 material = "src: #treetrunk-base;
@@ -179,8 +195,16 @@ mixin="sphericaltreeleaves"
 position="8 2 -6"
 >
 </a-sphere>
-<a-box
+<a-entity
+gltf-model="#chair"position="-10 0 20"
+rotation="0 45 0"
+scale="0.08 0.05 0.08">
+</a-entity>
+<a-entity
+gltf-model="#lamp"position="1.0 0 -10"scale="2 2 2"></a-entity>
+
 
                      </a-scene>
+
                     </body>
                     </html>
