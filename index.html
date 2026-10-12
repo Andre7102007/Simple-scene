@@ -22,22 +22,64 @@
                     <img id="treetrunk-normal" src="assets\Bark_06_normal.jpg"> 
                     <img id="sky" src="assets\Sky.jpg">
                     <a-asset-item
-                    id="chair"
-                    src="assets\Chair.glb">
+                    id="Doctor"
+                    src="assets\Doctor.glb">
                 </a-asset-item>
+
                 <a-asset-item
-                id="lamp"
-                src="assets\Lamp.glb">
+                id="OfficeChair"
+                src="assets\OfficeChair.glb">
+            </a-asset-item>
+
+            <a-asset-item
+                id="Desk"
+                src="assets\Desk.glb">
+            </a-asset-item>
+
+            <a-asset-item
+                id="Health"
+                src="assets\Health.glb">
+            </a-asset-item>
+
+            <a-asset-item
+                id="Blackboard"
+                src="assets\Blackboard.glb">
+            </a-asset-item>
+
+           
             </a-asset-item>
             
                 </a-assets>
                 <a-entity
-                gltf-model="#Chair"
-                position="-1.0 0 -10"
+                gltf-model="#Doctor"
+                position="-1.0 0 -11"
                 rotation="0 45 0"
                 scale="0.1 0.1 0.1">
             </a-entity
             >
+            <a-entity
+            gltf-model="#OfficeChair"
+            position="-1 0 -14"
+            scale="2 1 1">
+        </a-entity>
+        <a-entity
+            gltf-model="#Desk"
+            position="-1 -0.1 -6"
+            scale="2 1 1">
+        </a-entity>
+
+        <a-entity
+            gltf-model="#Health"
+            position="-1 0 -14"
+            scale="3 4 1">
+        </a-entity>
+
+        <a-entity
+            gltf-model="#Blackboard"
+            position="-1 0 -15"
+            scale="4 12 3">
+        </a-entity>
+
 
                  <a-plane
                   material= "src: #grass-base;
